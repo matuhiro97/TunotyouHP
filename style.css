@@ -1,0 +1,105 @@
+/* ページ全体のデザイン ------------------------------------- */
+body {
+    background-color: #f0f8ff;  /* ページ全体の背景色 */
+    font-family: Arial, sans-serif; /* フォントファミリー指定 */
+    text-align: center;        /* テキストを中央揃え */
+    padding: 20px;             /* ページ全体にパディングを付与 */
+    margin: 0;                 /* ブラウザデフォルトのマージンをリセット */
+}
+
+/* 見出しデザイン ------------------------------------------- */
+h1 {
+    color: #ff6347;    /* h1の文字色（オレンジ系） */
+    font-size: 2.5em;  /* h1の文字サイズを大きめに */
+    margin-bottom: 20px; /* 下に余白を付けて分離 */
+}
+
+h2 {
+    color: #4682b4;    /* h2の文字色（青系） */
+    font-size: 1.8em;  /* h2の文字サイズ */
+    margin-bottom: 10px; /* 下に少し余白を付ける */
+}
+
+/* テキストデザイン ----------------------------------------- */
+p {
+    color: #333;       /* テキストカラー */
+    font-size: 1.2em;  /* 少し大きめの文字サイズ */
+    line-height: 1.6;  /* 行間を少し広くして読みやすく */
+}
+
+/* 強調したい単語のスタイル（好きな食べ物・夢）------------- */
+.favorite-food, .dream {
+    color: #e91e63;    /* ピンク系で強調 */
+    font-weight: bold; /* 太字で強調 */
+}
+
+/* 趣味リストのデザイン ------------------------------------- */
+.hobby-list {
+    list-style-type: none; /* リストマーカーを消去 */
+    padding: 0;            /* デフォルトのパディングをリセット */
+}
+
+.hobby-list li {
+    background-color: #1268be; /* 青系の背景色 */
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;   
+    display: inline-block;
+    color: #fff;
+}
+
+
+
+/* 食べ物の写真デザイン -------------------------------------- */
+.food-image {
+    border-radius: 10%;    /* 画像の角をやや丸くする */
+    width: 100px;          /* 画像の幅を固定 */
+    height: 100px;         /* 高さを固定 */
+    margin: 10px;          /* 要素間の余白を設定 */
+}
+
+/* YouTube動画のデザイン ------------------------------------ */
+.youtube-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 10px;
+    border: none;
+}
+
+/* セクション間の余白 ---------------------------------------- */
+section {
+    margin-bottom: 40px;
+}
+
+/* フッター ----------------------------------------------- */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* section番号ごとのスタイル例（任意） ---------------------- */
+/* 必要に応じて各セクションの背景色変更なども可能 */
+main > section:nth-of-type(1) {
+    background-color: #fff0f0; /* 自己紹介セクション */
+}
+
+main > section:nth-of-type(2) {
+    background-color: #f0fff0; /* 趣味セクション */
+}
+
+main > section:nth-of-type(3) {
+    background-color: #f0f0ff; /* 食べ物セクション */
+}
+
+main > section:nth-of-type(4) {
+    background-color: #fffaf0; /* YouTube動画セクション */
+}
+
+main > section:nth-of-type(5) {
+    background-color: #fef0ff; /* 将来の夢セクション */
+}
